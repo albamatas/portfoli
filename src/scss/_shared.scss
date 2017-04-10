@@ -1,0 +1,96 @@
+body{
+  font-size: 16px;
+  overflow-x: hidden;
+  @media only screen and (max-width: 1000px){
+  line-height: 2.25em;
+  }
+  @media only screen and (min-width: 1001px){
+  line-height: 1.875em;
+  }
+}
+  p{
+    font-family: 'PT Sans', sans-serif;
+    @media only screen and (max-width: 1000px){
+    font-size: 1.125em;
+    }
+    @media only screen and (min-width: 1001px){
+      font-size: 1.25em;
+    }
+  }
+  .nav, h1, h2{
+    font-family: "Arya", sans-serif;
+  }
+h1, h2{
+  color: white;
+  @media only screen and (max-width: 1000px){
+  font-size: 1.45em;
+  }
+}
+
+h3, h4{
+    font-family: 'PT Sans', sans-serif;
+    @media only screen and (max-width: 1000px){
+    font-size: 1.25em;
+    }
+}
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  padding-top:1em;
+    @media only screen and (min-width: 1001px){
+    font-size: 7.5em;
+    line-height: 1em;
+    padding-top:0em;
+    }
+}
+h2{
+  text-align: center;
+    @media only screen and (min-width: 1001px){
+    font-size: 1.4em;
+    line-height: 3em;
+    }
+}
+h3{
+  color: white;
+    @media only screen and (min-width: 1001px){
+    font-size: 1.15em;
+    line-height: 1.25em;
+    }
+}
+div.content{
+  @media only screen and (max-width: 1000px){
+    padding-top:65px;
+  }
+  @media only screen and (min-width: 1001px){
+    margin: -22px 0 0;
+  }
+}
+
+.nav{
+  text-transform: uppercase;
+  text-align: center;
+}
+.project{
+
+}
+
+svg{
+  position: absolute;
+  z-index: 0;
+  width: 115%;
+  left: -9%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+svg.top{
+  top: 0;
+  transform: translateY(-99%);
+}
+svg.bottom{
+  bottom: 0;
+  transform: translateY(0%);
+}
+img{
+  display: inline-block;
+  text-align: center;
+}
