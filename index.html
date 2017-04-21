@@ -9,14 +9,17 @@
   src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
-    <script src="src/js/mobile.js" charset="utf-8"></script>
+    <script src="src/js/javascript.js" charset="utf-8"></script>
     <title>Portfolio of Alba Matas - All Web/App Design & Developement projects</title>
   </head>
   <body class="body-portfolio">
-    <header>
+    <header class="header">
       <img src="src/img/logo.png" alt="">
-      <div class="burguer">
-      </div>
+      <button class="hamburger hamburger--elastic" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
       <div class="nav">
           <ul class="nav__list">
             <li class="nav__list__item--selectedIndex"><a href="index.html">Portfolio</a></li>
@@ -47,16 +50,23 @@
             <polygon fill="white" points="0,100 100,0 100,100"/>
           </svg>
           <a class="cta" href="#">
-              <div class="cta_item">
+            <span class="year">2016</span>
+            <div class="cta_item">
               See study case
             </div>
           </a>
-          <span class="year">2016</span>
-          <h4>Problem</h4>
-          <p> Kids do not get profit of museum visits because the content is not adapted to them, they do not even understand it but they neither enjoy it.</p>
-          <h4>Solution</h4>
-          <p><b>Museu Picasso GameGuide</b> is an Hybrid App that embeds multimedia content and combines it with games that are directly related with the content and the paintings exhibited. Games are simple, the interface is easy to use, with drag & drop and tap game interactions.</p>
-          <img class="big" src="src/img/portfolio/picasso2.png" alt="Capture of one of the games of Museu Picasso GameGuide">
+
+          <div class="info__wrapper">
+            <div class="info__wrapper--left">
+              <h4>Problem</h4>
+              <p> Kids do not get profit of museum visits because the content is not adapted to them, they do not even understand it but they neither enjoy it.</p>
+              <h4>Solution</h4>
+              <p><b>Museu Picasso GameGuide</b> is an Hybrid App that embeds multimedia content and combines it with games that are directly related with the content and the paintings exhibited. Games are simple, the interface is easy to use, with drag & drop and tap game interactions.</p>
+            </div>
+            <div class="">
+              <img class="big gameguide" src="src/img/portfolio/picasso2.png" alt="Capture of one of the games of Museu Picasso GameGuide">
+            </div>
+          </div>
           <svg class="bottom" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon fill="#5984DE" points="0,100 100,0 100,100"/>
           </svg>
@@ -78,28 +88,42 @@
             <polygon fill="#5984DE" points="0,100 100,0 100,100"/>
           </svg>
           <div class="cta">
+            <span class="year">2016</span>
             See study case
           </div>
-          <span class="year">2016</span>
-          <h4>Research and User testing - User centred design</h4>
-          <p>The first step of the making process was to do a research about the market, the apps that provided similar functionalities but also to set which was the target and who could take profit of this application.</p>
-          <p>After that, the users were interviewed about their needs and expectations. This was a significant part of the process because we could set their priorities and offer them what they really needed.</p>
+          <div class="info__wrapper">
+            <div class="info__wrapper--left">
+              <h4>Research and User testing - User centred design</h4>
+              <p>The first step of the making process was to do a research about the market, the apps that provided similar functionalities but also to set which was the target and who could take profit of this application.</p>
+              <p>After that, the users were interviewed about their needs and expectations. This was a significant part of the process because we could set their priorities and offer them what they really needed.</p>
+            </div>
           <img src="src/img/portfolio/focuss2.png" alt="focuss app wireframes and first prototype">
-          <img src="src/img/portfolio/focuss3.png" alt="focuss app wireframes and first prototype">
-          <h4>Wireframe</h4>
-          <p>To do a mockup was the beginning of the designing process so as to do a user centred design and prioritize the user experience over the design.
-          The prototype was tested and the feedback made us on one hand, do little changes and on the other hand, verify that our propositions were mostly on the right direction.</p>
-          <h4>The final prototype</h4>
-          <ul>
-            <li>Fixed menu</li>
-            <li>Easy to navigate</li>
-            <li>Microinteractions and advanced animations/transition</li>
-            <li>Profiles and Groups sections for the user to manage them and set its preferences and personalization</li>
-            <li>Material design principles</li>
-            <li>Funnel architecture</li>
-          </ul>
-          <img src="src/img/portfolio/focuss4.png" alt="Justinmind definitive prototype">
-          <img src="src/img/portfolio/focuss5.png" alt="Justinmind definitive prototype">
+        </div>
+        <div class="info__wrapper">
+          <div class="info__wrapper--right">
+            <h4>Wireframe</h4>
+            <p>To do a mockup was the beginning of the designing process so as to do a user centred design and prioritize the user experience over the design.
+            The prototype was tested and the feedback made us on one hand, do little changes and on the other hand, verify that our propositions were mostly on the right direction.</p>
+          </div>
+          <img class="focuss3" src="src/img/portfolio/focuss3.png" alt="focuss app wireframes and first prototype">
+        </div>
+        <div class="info__wrapper">
+          <div class="info__wrapper--left final">
+            <h4>The final prototype</h4>
+            <ul>
+              <li>Fixed menu</li>
+              <li>Easy to navigate</li>
+              <li>Microinteractions and advanced animations/transition</li>
+              <li>Profiles and Groups sections for the user to manage them and set its preferences and personalization</li>
+              <li>Material design principles</li>
+              <li>Funnel architecture</li>
+            </ul>
+          </div>
+          <span class="final-images">
+            <img src="src/img/portfolio/focuss4.png" alt="Justinmind definitive prototype">
+          </span>
+          </div>
+          <img class="focuss-last" src="src/img/portfolio/focuss5.png" alt="Justinmind definitive prototype">
           <svg class="top" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon fill="white" points="0,100 100,0 100,100"/>
           </svg>
@@ -121,14 +145,18 @@
             <polygon fill="#5984DE" points="0,100 100,0 100,100"/>
           </svg>
           <div class="cta">
+            <span class="year">2015</span>
             See study case
           </div>
-          <span class="year">2016</span>
+          <div class="info__wrapper">
+            <div class="info__wrapper--left">
           <h4>Problems</h4>
           <p>The content was unorganized and the items had no sense., the sidebar menu left little space for the main content, there were no calls to actions, falses affordances, among others.</p>
-          <img class="big" src="src/img/portfolio/phenomena2.png" alt="Comperison between the older (left side) and the designed and developed (right side)">
           <h4>Solution</h4>
           <p>Horizontal navigation menú on the top with clear active page and along with the social media links, new wireframe, with better defined boxes, visible CTAs, consistent design.</p>
+          </div>
+          <img class="big" src="src/img/portfolio/phenomena2.png" alt="Comperison between the older (left side) and the designed and developed (right side)">
+          </div>
           <svg class="top" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon fill="white" points="0,100 100,0 100,100"/>
           </svg>
