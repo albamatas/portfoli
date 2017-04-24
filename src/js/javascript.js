@@ -1,7 +1,8 @@
 $( document ).ready(function() {
 var height = $(".info").height();
-   $(".hamburger").click( function (){
-     $(".hamburger--elastic").toggleClass("is-active");
+
+   $(".hamburger").click( function (e){
+     $(".hamburger-inner").toggleClass("is-active");
      $(".header").toggleClass("header-height");
         });
 
