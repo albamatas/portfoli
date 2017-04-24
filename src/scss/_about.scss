@@ -1,4 +1,4 @@
-.body-about{
+.body-about, .body-contact{
 background-color: $c-blauFluix;
 
 h1{
@@ -16,7 +16,16 @@ svg{
 .bottom{
   top:-9.8vw;
   transform: rotateZ(180deg);
+  margin-bottom: 4vh;
 }
+.buttonTop{
+  @media screen and (min-width: 800px){
+    display: none;
+  }
+}
+}
+.body-contact{
+  background-color: $c-groc;
 }
 .me{
   transform: rotateY(180deg);
@@ -35,7 +44,7 @@ svg{
 }
 
 .about__wrapper{
-  @media only screen and (max-width: 800px){
+  @media only screen and (max-width: 1000px){
   background-color: white;
   padding: 5%;
   position: relative;
@@ -48,5 +57,4 @@ svg{
   left: 0;
   top:24vw;
   }
-
 }

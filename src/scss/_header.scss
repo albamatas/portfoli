@@ -63,43 +63,48 @@ header{
           justify-content: space-between;
 
           li{
+            position: relative;
             display: inline-block;
             width: 30%;
+            z-index: 10000;
           }
         }
 
         &__item {
+          height: 10vh;
           @media screen and (min-width: 1001px){
             width: 30%;
             display: inline-block;
           }
-          &a, &--selected a{
+        }
+      &__item--selected a{
             @media screen and (max-width: 1000px){
-            padding: 5% 0 15%;
+              top:-9vh;
+            padding: 5% 0 5%;
             position: relative;
             z-index:10000;
             }
+            @media screen and (min-width: 1000px){
+            top:-7vh;
+            z-index:10000;
+            transform: skewX(10deg);
+            }
           }
-        }
+
       &__item--selected:before{
           content: "";
           display: block;
           position: relative;
 
           @media screen and (max-width: 1000px){
-            top:9vh;
-            height: 15vh;
+            top:-1vh;
+            height: 10vh;
             width: 100%;
-            background-color: lighten($c-blau, 10%);
             transform: skewY(-5deg);
             z-index: 4;
           }
           @media screen and (min-width: 1001px){
-            height: 2px;
-            width: 100%;
-            color: black;
-            top: 80%;
-            z-index: 10000;
+            display: none;
           }
         }
       }
@@ -114,9 +119,10 @@ header{
 
     @media screen and (min-width: 1001px){
     margin: 0 5%;
-    top: 20px;
+    top: 2px;
     position: absolute;
     right: 0;
+    font-size: 60%;
     width: 12%;
     }
   }
@@ -138,9 +144,9 @@ header{
   background-color: transparent;
   position: absolute;
   right: 0;
-  padding: 15px;
+  padding: 3vh;
   border: 0;
-  margin: 10px 0 0;
+  margin: 0;
   overflow: visible; }
 
 
@@ -176,21 +182,60 @@ header{
       top: 2px;
       transition-duration: 0.275s;
       transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-      .hamburger--elastic.hamburger-inner::before {
+      .hamburger--elastic .hamburger-inner::before {
         top: 10px;
         transition: opacity 0.125s 0.275s ease; }
-      .hamburger--elastic.hamburger-inner::after {
+      .hamburger--elastic .hamburger-inner::after {
         top: 20px;
         transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
-    .hamburger--elastic.is-active .hamburger-inner {
-      transform: translate3d(0, 0px, 0) rotate(135deg);
+    .hamburger--elastic .hamburger-inner.is-active {
+      transform: translate3d(0, 10px, 0) rotate(135deg);
       transition-delay: 0.075s; }
-      .hamburger--elastic.is-active .hamburger-inner::before {
+      .hamburger--elastic .hamburger-inner.is-active::before {
         transition-delay: 0s;
         opacity: 0; }
-      .hamburger--elastic.is-active .hamburger-inner::after {
+      .hamburger--elastic .hamburger-inner.is-active::after {
         transform: translate3d(0, -10px, 0) rotate(-270deg);
         transition-delay: 0.075s;
       }
     }
+.portfolio{
+border-bottom: 2px solid darken($c-blau, 20%);
+.nav__list__item--selected:before{
+background-color: lighten($c-blau, 10%);
+}
+.nav__list__item--selected{
+  @media screen and (min-width: 1000px){
+  background-color: lighten($c-blau, 10%);
+    transform: skewX(-10deg);
+  }
+}
+}
+.about{
+border-bottom: 2px solid darken($c-blauFluix, 20%);
+.nav__list__item--selected:before{
+background-color: $c-blauFluix;
+}
+.nav__list__item--selected{
+  @media screen and (min-width: 1000px){
+  background-color:$c-blauFluix;
+  transform: skewX(-10deg);
+  a{
+    transform: skewX(10deg);
+  }
+  }
+}
+}
+.contact{
+  border-bottom: 2px solid darken($c-groc, 20%);
+  .nav__list__item--selected:before{
+  background-color: lighten($c-groc, 10%);
+  }
+  .nav__list__item--selected{
+    @media screen and (min-width: 1000px){
+    background-color: lighten($c-groc, 10%);
+      transform: skewX(-10deg);
+    }
+  }
+}

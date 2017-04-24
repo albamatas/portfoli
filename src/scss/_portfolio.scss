@@ -116,13 +116,15 @@ max-height: 0vh;
   margin-bottom: 3.5em;
   color: white;
 }
-.big {
+.big2 {
+  width: 50%;
   @media screen and(max-width: 800px){
     display: block;
     margin: 0 auto;
     width: 90%;
   }
 }
+
 
 .cta{
 display: block;
