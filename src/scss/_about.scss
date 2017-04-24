@@ -1,0 +1,52 @@
+.body-about{
+background-color: $c-blauFluix;
+
+h1{
+  color: darken(grey, 10%);
+  text-transform: none;
+    @media screen and (min-width: 1000px){
+      position: absolute;
+      padding: 5%;
+    }
+}
+svg{
+  position: relative;
+  top: 2vh;
+}
+.bottom{
+  top:-9.8vw;
+  transform: rotateZ(180deg);
+}
+}
+.me{
+  transform: rotateY(180deg);
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  z-index: 1000;
+  padding-top:5%;
+    @media only screen and (min-width: 1000px){
+    width: 50%;
+    display: inline-block;
+    left: 40%;
+    padding-top:auto;
+    }
+}
+
+.about__wrapper{
+  @media only screen and (max-width: 800px){
+  background-color: white;
+  padding: 5%;
+  position: relative;
+  top: -9.7vw;
+  }
+  @media only screen and (min-width: 1000px){
+  padding: 5%;
+  position: absolute;
+  width: 40%;
+  left: 0;
+  top:24vw;
+  }
+
+}

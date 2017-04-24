@@ -22,9 +22,6 @@ body{
   }
 h1, h2{
   color: white;
-  @media only screen and (max-width: 1000px){
-  font-size: 1.45em;
-  }
 }
 
 h3, h4{
@@ -37,17 +34,24 @@ h1{
   text-transform: uppercase;
   text-align: center;
   padding-top:1em;
+  font-size: 1.8em;
+  @media only screen and (min-width: 800px) and(max-width: 1000px){
+  font-size: 2.5em;
+  }
     @media only screen and (min-width: 1001px){
-    font-size: 7.5em;
-    line-height: 1em;
+    font-size: 5.5em;
     padding-top:0em;
+    line-height: 1em;
     }
 }
 h2{
   text-align: center;
+    @media only screen and (min-width: 800px){
+    text-align: left;
+    }
     @media only screen and (min-width: 1001px){
     font-size: 1.4em;
-    line-height: 3em;
+    margin-top: 6em;
     }
 }
 h3{
@@ -60,9 +64,6 @@ h3{
 div.content{
   @media only screen and (max-width: 1000px){
     padding-top:65px;
-  }
-  @media only screen and (min-width: 1001px){
-    margin: -22px 0 0;
   }
 }
 
@@ -77,14 +78,13 @@ div.content{
 svg{
   position: absolute;
   z-index: 0;
-  width: 115%;
-  left: -9%;
+  width: 100%;
   height: 10vw;
-  /* set height to pixels if you want angle to change with screen width */
+  left:0;
 }
 svg.top{
   top: 0;
-  transform: translateY(-99%);
+  transform: translateY(-98%);
 }
 svg.bottom{
   bottom: 0;
@@ -93,4 +93,33 @@ svg.bottom{
 img{
   display: inline-block;
   text-align: center;
+}
+.right svg.top{
+  @media screen and (min-width: 800px){
+    top: 0;
+    transform: translateY(-98%) rotateY(180deg);
+  }
+}
+
+.right svg.bottom{
+  @media screen and (min-width: 800px){
+    bottom: 0;
+    transform: translateY(0%) rotateY(180deg);
+  }
+}
+.buttonTop{
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+  position: relative;
+  left:80%;
+  width: 50px;
+  height: 50px;
+  font-size: 3em;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  line-height: 50px;
+  margin-bottom: 0.5em;
+  transform: rotate(-90deg);
 }
